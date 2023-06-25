@@ -1,0 +1,191 @@
+/* RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Estilos generales */
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos de la barra de navegación */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+}
+
+/* Estilos de la sección de inicio */
+.home {
+    margin: 1rem;
+    text-align: center;
+    padding: 50px 0;
+    flex-grow: 1;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+/* Estilos de la sección lateral */
+.side-section {
+    margin: 1rem;
+    padding: 20px;
+}
+
+.image-wrapper {
+    margin-bottom: 20px;
+}
+
+.image-wrapper img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos del footer */
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin-top: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+iframe {
+    margin-top: 20px;
+}
+
+/* Media queries */
+@media screen and (min-width: 768px) {
+    .side-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end; /* Alinea las imágenes al costado derecho */
+    }
+
+    .image-wrapper {
+        margin-bottom: 20px;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .side-section {
+        display: block;
+        text-align: center; /* Centra las imágenes en dispositivos móviles */
+    }
+
+    .image-wrapper {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}
+
+
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+    grid-template-rows: auto 1fr auto; /* Filas automáticas para el encabezado, contenido y pie de página */
+    min-height: 100vh; /* Establece la altura mínima del cuerpo al 100% de la altura de la ventana */
+  }
+  
+  header {
+    grid-column: 1 / span 2; /* Ocupa las dos columnas */
+  }
+  
+  section.home {
+    grid-column: 1; /* Ocupa la primera columna */
+    grid-row: 2; /* Se ubica en la segunda fila */
+  }
+  
+  .side-section {
+    grid-column: 2; /* Ocupa la segunda columna */
+    grid-row: 2 / span 2; /* Se ubica en la segunda fila y se extiende a la tercera fila */
+  }
+  
+  footer {
+    grid-column: 1 / span 2; /* Ocupa las dos columnas */
+    grid-row: 3; /* Se ubica en la tercera fila */
+  }
+
+  
+  @media screen and (max-width: 767px) {
+    body {
+      grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
+      grid-template-rows: auto 1fr auto auto; /* Agrega una fila adicional para la sección al costado */
+    }
+  
+    .side-section {
+      grid-column: 1; /* Ocupa la única columna disponible */
+      grid-row: 4; /* Se ubica en la cuarta fila */
+    }
+  
+    footer {
+      grid-row: 5; /* Se ubica en la quinta fila */
+    }
+  }
+
+
+
+  

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Contacto</title>
+    <!-- link de bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+     <!-- link de css -->
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body class="wrapper">
+    <style>
+        html, body {
+            height: 100%;
+        }
+        .wrapper {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .content {
+            flex: 1;
+        }
+    </style>
+     <header>
+      <nav>
+          <ul>
+              <li><a class="btn" href="../index.html">Inicio</a></li>
+              <li><a class="btn" href="../pages/historia.html">Historia</a></li>
+              <li><a class="btn" href="../pages/productos.html">Productos</a></li>
+              <li><a class="btn" href="../pages/contacto.html">Contacto</a></li>
+              <li><a href="../pages/about.html" class="btn">Sobre nosotros</a></li>
+          </ul>
+      </nav>
+  </header>
+    <div class="container">
+        <h1>Contact Us</h1>
+
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+
+
+    <footer class="bg-dark text-light mt-auto">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-md-4">
+              <h3>Contacto</h3>
+              <p>Dirección: 123 Calle Ejemplo, CABA</p>
+              <p>Teléfono: +54 1235456789</p>
+              <p>Email: info@ejemplo.com</p>
+            </div>
+            <div class="col-md-4">
+              <h3>Síguenos en redes sociales</h3>
+              <ul class="list-inline social-media">
+                <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i>Facebook</a></li>
+                <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+                <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i>Intagram</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-bar bg-secondary py-2">
+          <div class="container text-center">
+            <p>&copy; 2023 Inkfinity Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
